@@ -1,0 +1,33 @@
+##go for fail scenario first##
+cigar_party
+def cigar_party(cigars, is_weekend):
+  if is_weekend:
+    return cigars >= 40
+  else:
+    return (cigars >= 40 and cigars <=60)
+    
+    OR
+  return cigars >= 40 if is_weekend \ 
+  else cigars>=40 and cigars<=60
+  
+  
+date_fashion
+def date_fashion(you, date):
+  if you <= 2 or date <= 2:
+    return 0
+  elif you >8 or date > 8:
+    return 2
+  else:
+    return 1
+
+
+squirrel_play
+def squirrel_play(temp, is_summer):
+  if is_summer:
+    return temp >= 60 and temp <= 100  
+  else: 
+    return temp >= 60 and temp <= 90  
+    OR
+    
+ def squirrel_play(temp, is_summer):
+  return temp>= 60 and temp<=100 if is_summer else temp>= 60 and temp<=90   
